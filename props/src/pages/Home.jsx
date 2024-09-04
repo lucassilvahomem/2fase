@@ -3,7 +3,7 @@ import './home.css'
 function Home() {
   return (
     <div>
-      <Titulo texto={"Dinossauros"} emoji={"🐱‍🐉"}/>
+      <Titulo texto={"Dinossauros"}/>
       <h2>dinossauros, muitos dinossauros</h2>
     </div>
   )

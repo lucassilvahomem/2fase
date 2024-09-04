@@ -2,12 +2,13 @@ import Cadastro from './pages/Cadastro'
 import './App.css'
 import Home from './pages/Home'
 
-function App() {
 
+function App() {
+ 
   return (
     <div className='app-container'>
       {/* <Home/> */}
-      <Cadastro/>
+      {/*<Cadastro/>*/}
     </div>
   )
 }
