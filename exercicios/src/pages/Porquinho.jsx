@@ -18,10 +18,10 @@ function porquinho() {
         if(dinheiro >= inputpreço){
            setSobrou(true)
            setFaltou(false)
-           }else{
-            setFaltou(true)
-            setSobrou(false)
-           }
+        }else{
+           setFaltou(true)
+           setSobrou(false)
+        }
     }
   return (
     <div>
