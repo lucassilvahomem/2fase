@@ -12,11 +12,19 @@ function App() {
 
     setFila([...fila, senha])
   }
+
+  function gerarSenhaPreferencial(){
+    let senhapreferencial = {
+      numero: Date.now(),
+      tipo: "preferencial",
+    }
+
+    setFila([...fila, senhapreferencial])
+  }
+
   function atender(){
     if(fila.length){
       alert(fila[0].numero)
-      //let filaTemp = fila
-      //filaTemp = filaTemp.splice(0, 1)
       setFila(fila.slice(1))
 
     }else{
@@ -29,6 +37,7 @@ function App() {
     <>
       <button onClick={atender}> Atender </button>
       <button onClick={gerarSenha}> Senha Normal </button>
+      <button onClick={gerarSenhaPreferencial}> Senha Preferencial </button>
       {fila.map( (senha) => (
           <div key={senha.numero}>
             <p>{senha.numero}</p>
