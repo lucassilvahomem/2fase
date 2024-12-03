@@ -1,0 +1,72 @@
+#root{
+  height: 100%;
+}
+
+html{
+  height: 100%;
+  width: 100%;
+  background-color: blue;
+}
+
+body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: gold;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: blueviolet;
+}
+
+.topo{
+  width: 100%;
+  height: 30%;
+  display: flex;
+  background-color: black;
+  display: flex;
+}
+
+.topoesquerda{
+  width: 30%;
+  height: 100%;
+  padding: 30px;
+  background-color: brown;
+}
+
+.topodireita{
+  width: 70%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: crimson;
+}
+
+.centro{
+  width: 100%;
+  height: 70%;
+  display: flex;
+  background-color: aquamarine;
+  flex-direction: column;
+}
+
+.centrocima{
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: bisque;
+}
+
+.centrobaixo{
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: red;
+}
+

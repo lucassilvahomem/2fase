@@ -4,13 +4,13 @@ import './App.css'
 function App() {
   const [fila, setFila] = useState([])
 
-  function gerarSenha(){
-    let senha = {
+  function gerarSenhanormal(){
+    let senhanormal = {
       numero: Date.now(),
       tipo: "normal",
     }
 
-    setFila([...fila, senha])
+    setFila([...fila, senhanormal])
   }
 
   function gerarSenhaPreferencial(){
@@ -36,12 +36,12 @@ function App() {
   return (
     <>
       <button onClick={atender}> Atender </button>
-      <button onClick={gerarSenha}> Senha Normal </button>
+      <button onClick={gerarSenhanormal}> Senha Normal </button>
       <button onClick={gerarSenhaPreferencial}> Senha Preferencial </button>
-      {fila.map( (senha) => (
-          <div key={senha.numero}>
-            <p>{senha.numero}</p>
-            <p>{senha.tipo}</p>
+      {fila.map( (senhanormal) => (
+          <div key={senhanormal.numero}>
+            <p>{senhanormal.numero}</p>
+            <p>{senhanormal.tipo}</p>
           </div>
       ) )}
     </>
